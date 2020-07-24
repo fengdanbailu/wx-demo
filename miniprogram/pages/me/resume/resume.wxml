@@ -1,0 +1,76 @@
+<view class="container">
+  <view>
+    <view class="title" data-show="basicInfo" bindtap="toggle">{{ mappingToCh.basicInfo }}</view>
+    <view wx:if="{{ show.basicInfo }}">
+      <view class="item">{{ mappingToCh.name }} : {{ basicInfo.name }}</view>
+      <view class="item">{{ mappingToCh.education }} : {{ basicInfo.education }}</view>
+      <view class="item">{{ mappingToCh.experience }} : {{ basicInfo.experience }}</view>
+      <view class="item">{{ mappingToCh.birthday }} : {{ basicInfo.birthday }}</view>
+      <view class="item">{{ mappingToCh.target }} : {{ basicInfo.target }}</view>
+      <view class="item">{{ mappingToCh.phone }} : {{ basicInfo.phone }}</view>
+      <view class="item">{{ mappingToCh.major }} : {{ basicInfo.major }}</view>
+      <view class="item">{{ mappingToCh.email }} : {{ basicInfo.email }}</view>
+      <view class="item">照片 : <image style="width:164px;height:230px;" src="{{basicInfo.image}}"></image>
+      </view>
+    </view>
+  </view>
+
+  <view>
+    <view class="title" data-show="professionalSkill" bindtap="toggle">{{ mappingToCh.professionalSkill }}</view>
+    <view wx:if="{{ show.professionalSkill }}">
+      <view class="item" wx:for = "{{ professionalSkill }}" wx:key="index" wx:for-item="item">
+        {{ index+1 }}.{{ item }}
+      </view>  
+    </view>
+  </view>
+
+  <view>
+    <view class="title" data-show="educationExperience" bindtap="toggle">{{ mappingToCh.educationExperience }}</view>
+    <view wx:if="{{ show.educationExperience }}">
+      <view wx:for = "{{ educationExperience }}" wx:key="duration" wx:for-item="item">
+        <view class="item" >{{item.duration}} | {{item.school}} | {{item.level}} | {{item.major}}</view>
+      </view>
+    </view>  
+  </view>
+
+  <view>
+    <view class="title" data-show="workExperience" bindtap="toggle">{{ mappingToCh.workExperience }}</view>
+    <view wx:if="{{ show.workExperience }}">
+      <view wx:for = "{{workExperience}}" wx:key="duration" wx:for-item="item">
+        <view class="item" >{{item.duration}} | {{item.company}} | {{item.position}}</view>
+      </view>  
+    </view>
+     
+  </view>
+
+  <view>
+     <view wx:for = "{{projectExperience}}" wx:key="name" wx:for-item="item">
+      <view class="title" data-show="{{item.shortName}}" bindtap="toggle">{{ mappingToCh.projectExperience }}{{index+1}} - {{item.name}}</view>
+      <view wx:if="{{show[item.shortName] }}">
+        <view class="item">{{item.name}} (简称{{item.shortName}})</view>
+        <view class="item">{{mappingToCh.description}} : {{item.description}}</view>
+        <view class="item">{{mappingToCh.responsibilities}} :</view>
+        <view class="item" wx:for="{{item.responsibilities}}" wx:key="index" wx:for-item="subitem">
+          {{ index+1 }}.{{ subitem }}
+        </view>
+      
+        <view class="item">{{mappingToCh.performance}} :</view>
+        <view class="item" wx:for="{{item.performance}}" wx:key="index" wx:for-item="subitem">
+          {{ index+1 }}.{{ subitem }}
+        </view>
+      </view>
+       
+    </view>  
+  </view>
+
+  <view>
+    <view class="title" data-show="selfEvaluation" bindtap="toggle">{{ mappingToCh.selfEvaluation }}</view>
+    <view wx:if="{{ show.selfEvaluation }}">
+      <view class="item" wx:for = "{{ selfEvaluation }}" wx:key= "index" wx:for-item="item">
+        {{ index+1 }}.{{ item }}
+      </view>  
+    </view>
+    
+  </view>
+
+</view>

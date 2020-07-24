@@ -3,8 +3,8 @@
     "pages/wx/index",
     "pages/contact/index",
     "pages/found/index",
-    "pages/me/index",
-
+    "pages/me/index", 
+    "pages/me/resume/resume", 
     "pages/index/index",
     "pages/userConsole/userConsole",
     "pages/storageConsole/storageConsole",
@@ -20,11 +20,10 @@
     "pages/im/room/room"
   ],
   "window": {
-    "backgroundColor": "#F6F6F6",
-    "backgroundTextStyle": "light",
-    "navigationBarBackgroundColor": "#F6F6F6",
+    "navigationBarTextStyle": "@navigationBarTextStyle",
     "navigationBarTitleText": "我的微信小程序",
-    "navigationBarTextStyle": "black"
+    "navigationBarBackgroundColor": "@navigationBarBackgroundColor",
+    "backgroundColor": "@backgroundColor"
   },
 
   "style": "v2",
@@ -57,6 +56,12 @@
         "iconPath": "@iconTabMe",
         "selectedIconPath": "@selectedIconTabMe",
         "text": "我"
+      },
+      {
+        "pagePath": "pages/me/resume/resume",
+        "iconPath": "@iconTabMe",
+        "selectedIconPath": "@selectedIconTabMe",
+        "text": "简历"
       }
     ]
   },
