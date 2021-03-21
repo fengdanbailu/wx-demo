@@ -1,12 +1,7 @@
-const app = getApp()
-
 Page({
   data: {
-    msg: "welcome",
-    num: 0,
     latitude: 0,
     longitude: 0,
-    text: ""
   },
   setMap() {
     wx.getLocation({
@@ -22,45 +17,32 @@ Page({
       }
     })
   },
-  clickMe() {
-    this.setData({
-      msg: "点击了" + this.data.num + "次",
-      num: this.data.num + 1
-    }, function () {
-      console.log("clickMe")
-    })
-    console.log(this.data.msg)
-  },
   onLoad(options) {
-    console.log("onLoad")
-    console.log(options)
-    this.data.msg = "10086"
-    console.log(this.data.msg)
     this.setMap()
   },
   onReady() {
-    console.log("onReady")
+    console.log("map:onReady")
   },
   onShow() {
-    console.log("onShow")
+    console.log("map:onShow")
   },
   onHide() {
-    console.log("onHide")
+    console.log("map:onHide")
   },
   onUnpoad() {
-    console.log("onUnpoad")
+    console.log("map:onUnpoad")
   },
   onPullDownRefresh() {
-    console.log("onPullDownRefresh")
+    console.log("map:onPullDownRefresh")
   },
   onReachBottom() {
-    console.log("onReachBottom")
+    console.log("map:onReachBottom")
   },
   onShareAppMessage() {
-    console.log("onShareAppMessage")
+    console.log("map:onShareAppMessage")
   },
   onPageScroll() {
-    console.log("onPageScroll")
+    console.log("map:onPageScroll")
   },
   onResize() {
     console.log("onResize")

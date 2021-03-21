@@ -40,7 +40,7 @@ Page({
       phone: '18822253630',
       education: '硕士',
       major: '计算机科学与技术',
-      experience: '四年',
+      experience: '五年',
       email: ' chenguoming2015@163.com',
       image: '/images/name.png'
     },
@@ -58,18 +58,24 @@ Page({
       }
     ],
     workExperience: [{
-      duration: '2016.07—— 至今 ',
-      company: '神州租车（天津）有限公司',
-      position: '运维开发工程师'
-    }],
+        duration: '2016.07—— 2020.08 ',
+        company: '神州租车（天津）有限公司',
+        position: '运维开发工程师（前端）'
+      },
+      {
+        duration: '2020.09—— 至 今 ',
+        company: '宇信科技集团股份有限公司',
+        position: '前端开发工程师'
+      }
+    ],
     professionalSkill: [
-      '熟练掌握web前端HTML/CSS/JavaScript/jQuery等前端技术',
-      '熟练使用VUE+elementUI+vuex框架，掌握其生命周期、渲染机制等原理',
-      '熟悉ES6语法，熟悉webpack打包工具',
-      '熟悉postman、git、nginx等日常工具',
-      '了解微信小程序、移动端h5开发',
-      '了解go语言，使用过iris框架',
-      '了解python和shell基本命令',
+      '熟练掌握VUE基本原理及其核心插件（Vue Router和Vuex）；',
+      '熟练使用ElementUI/Echarts，具备自定义组件开发的能力；',
+      '熟练掌握HTML5/CSS3/JavaScript/jQuery等前端基础；',
+      '具备工程化、模块化开发能力，掌握ES6+等新特性；',
+      '熟练使用webpack、git等工具，熟悉http协议及前端性能优化；',
+      '了解微信小程序，了解reactjs/nodejs/等；',
+      '了解go（iris框架）、nginx配置和基本的shell命令；',
     ],
     projectExperience: [{
         name: '自助运维平台',
@@ -105,18 +111,30 @@ Page({
         description: '主要包括服务指标度量，七层和四层负载均衡系统、WAF防护系统、缓存系统、名字服务等；是公司层面服务流量的总入口。',
         responsibilities: [
           '负责UFE平管理端的整体原型设计和前端开发工作；',
-          '推进UFE2.0改版，为提高开发效率，图表以嵌套grafana为主；新功能也逐步转向vue框架。'
+          '推进UFE2.0改版，为提高开发效率，图表以嵌套grafana为主；新功能也逐步转向vue框架。'
         ],
         performance: [
           '平台支持管理接入节点，配置变更生效；流量状态的监控检查以及日志聚合查询，满足了运维对服务监控管理需求，平台已经稳定运行三年；',
           '平台提供多维度的接入日志查询和服务指标监控，方便开发查询和定位问题。'
         ]
+      },
+      {
+        name: '农行人力资源管理平台',
+        shortName: 'DHR',
+        description: 'DHR系统为新一版农行人力资源管理平台，包括机构管理、岗位管理、人员管理、权限审批等模块.',
+        responsibilities: [
+          '负责岗位和人员管理相关模块的开发与维护；',
+          '封装公共业务组件，推进前端项目规范化、统一化，提高开发效率'
+        ],
+        performance: [
+          '完成公共业务组件开发以及相关模块的日常开发维护；',
+        ]
       }
     ],
     selfEvaluation: [
-      '为人诚恳，讲诚信',
-      '工作积极负责，善始善终',
-      '乐于学习、钻研新技术新框架'
+      '有责任心、执行力；',
+      '工作积极负责，善始善终;',
+      '乐于学习、钻研新技术新框架;'
     ]
   },
   onLoad: function () {

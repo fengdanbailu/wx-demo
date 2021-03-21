@@ -1,0 +1,140 @@
+/**index.wxss**/
+page{
+  background: #F6F6F6;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.nav-search{
+  width: 100%;
+  height:45px;
+  background: #FFFFFF;
+}
+.info{
+  width:100%;
+  background: #F6F6F6;
+  text-align: center;
+  border-bottom: 1px solid #808081;
+  padding: 8px;
+}
+.main{
+  width:100%;
+  background: #F6F6F6;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin:5px 10px;
+}
+.out-list{
+  display:flex;
+  flex-direction:row;
+  margin:5px 10px;
+  
+}
+
+.inner-list{
+  display:flex;
+  flex-direction:column;
+  width:100%;
+  padding: 2px 5px;
+  border-bottom: 1px solid #808081;
+}
+.inner-line{
+  display:flex;
+  flex-direction:space-between;
+}
+.left-line{
+  width:50%;
+  text-align: left;
+}
+.right-line{
+  width: 50%;
+  text-align: right;
+}
+.small-size{
+  font-size:80%;
+}
+.item-image{
+  width:50px;
+  height:50px;
+  margin:2px;
+}
+.search {
+  height: 30px;
+  border: 1px solid #F6F6F6;
+  background:#F6F6F6;
+  text-align: center;
+  margin:5px 10px
+}
+
+@media (prefers-color-scheme: dark) {
+  page{
+    background: #272727;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  .nav-search{
+    width: 100%;
+    height:45px;
+    background: #1F1F1F;
+  }
+  .info{
+    width:100%;
+    background: #272727;
+    text-align: center;
+    border-bottom: 1px solid #808081;
+    padding: 8px;
+  }
+  .main{
+    width:100%;
+    background: #272727;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin:5px 10px;
+  }
+  .out-list{
+    display:flex;
+    flex-direction:row;
+    margin:5px 10px;
+    
+  }
+
+  .inner-list{
+    display:flex;
+    flex-direction:column;
+    width:100%;
+    padding: 2px 5px;
+    border-bottom: 1px solid #808081;
+  }
+  .inner-line{
+    display:flex;
+    flex-direction:space-between;
+  }
+  .left-line{
+    width:50%;
+    text-align: left;
+  }
+  .right-line{
+    width: 50%;
+    text-align: right;
+  }
+  .small-size{
+    font-size:80%;
+  }
+  .item-image{
+    width:50px;
+    height:50px;
+    margin:2px;
+  }
+  .search {
+    height: 30px;
+    border: 1px solid #272727;
+    background:#272727;
+    text-align: center;
+    margin:5px 10px
+  }
+}

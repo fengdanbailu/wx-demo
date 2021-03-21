@@ -1,0 +1,42 @@
+{
+  "light": {
+    "navigationBarTextStyle": "black",
+    "navigationBarBackgroundColor": "#F7F7F7",
+    "backgroundColor": "#F7F7F7",
+    "tabBarColor": "#7A7E83",
+    "tabBarSelectedColor": "#3cc51f",
+    "tabBarBorderStyle": "black",
+    "tabBarBackgroundColor": "#F7F7F7",
+    "iconTabWx": "images/wechat.png",
+    "selectedIconTabWx": "images/wechatHL.png",
+    "iconTabImitate": "images/wechat.png",
+    "selectedIconTabImitate": "images/wechatHL.png",
+    "iconTabMap": "images/wechat.png",
+    "selectedIconTabMap": "images/wechatHL.png",
+    "iconTabDocument": "images/wechat.png",
+    "selectedIconTabDocument": "images/wechatHL.png",
+    "iconTabResume": "images/wechat.png",
+    "selectedIconTabResume": "images/wechatHL.png",
+    "backgroundTextStyle": "light"
+  },
+  "dark": {
+    "navigationBarTextStyle": "white",
+    "navigationBarBackgroundColor": "#1F1F1F",
+    "backgroundColor": "#1F1F1F",
+    "tabBarColor": "#F7F7F7",
+    "tabBarSelectedColor": "#51A937",
+    "tabBarBorderStyle": "white",
+    "tabBarBackgroundColor": "#1F1F1F",
+    "iconTabWx": "images/wechat.png",
+    "selectedIconTabWx": "images/wechatHL.png",
+    "iconTabImitate": "images/wechat.png",
+    "selectedIconTabImitate": "images/wechatHL.png",
+    "iconTabMap": "images/wechat.png",
+    "selectedIconTabMap": "images/wechatHL.png",
+    "iconTabDocument": "images/wechat.png",
+    "selectedIconTabDocument": "images/wechatHL.png",
+    "iconTabResume": "images/wechat.png",
+    "selectedIconTabResume": "images/wechatHL.png",
+    "backgroundTextStyle": "dark"
+  }
+}

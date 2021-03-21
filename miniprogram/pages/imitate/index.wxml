@@ -1,0 +1,9 @@
+<!--index.wxml-->
+<view class="container">
+	<navigator class="info" url="{{currentLink.url}}">选中页面跳转</navigator>
+	<radio-group class="radio-group" bindchange="checkboxChange">
+		<view wx:for="{{list}}" wx:key="id" wx:for-item="item">
+			<radio class="radio" disabled="{{item.disabled}}" value="{{item.value}}" checked="{{item.checked}}">{{item.name}}</radio>
+		</view>
+	</radio-group>
+</view>

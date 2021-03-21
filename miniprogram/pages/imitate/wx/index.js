@@ -40,18 +40,12 @@ Page({
     ]
   },
   onLoad: function () {
-    var title = '微信' + '(' + this.data.msgNumber + ')'
     wx.setNavigationBarTitle({
-      title: title,
-      complete: (res) => {},
-      fail: (res) => {},
-      success: (res) => {},
+      title: "模仿页面-微信"
     })
-
     wx.showTabBarRedDot({
       index: 1,
     })
-
     wx.setTabBarBadge({
       index: 0,
       text: this.data.msgNumber + '',

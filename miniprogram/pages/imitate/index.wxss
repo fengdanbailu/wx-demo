@@ -14,3 +14,18 @@ page{
     justify-content: flex-start;
   }
 }
+
+.radio-group {
+    border-bottom: 1px solid #ddd;
+    width:100%;
+    text-align: left;
+}
+.radio {
+    display: block;
+    border-top: 1px solid #ddd;
+    padding: 5px;
+}
+.info{
+  margin:10px;
+  color:#07c160;
+}

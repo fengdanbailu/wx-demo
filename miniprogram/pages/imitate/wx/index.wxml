@@ -1,0 +1,21 @@
+<!--index.wxml-->
+<view class="container">
+    <view class="nav-search">
+        <input class="search" placeholder="搜索" />
+    </view>
+    <view class="info">Mac微信已登录</view>
+    <view class="main">
+        <view wx:for = "{{list}}" wx:key="name" wx:for-item="item" wx:for-index="name" class="out-list">
+            <image class="item-image" src="{{item.imagurl}}"></image>
+            <view class="inner-list">
+                <view class="inner-line">
+                    <text class="left-line">{{item.name}}</text>
+                    <text class="right-line small-size">{{item.date}}</text>
+                </view>
+                <view main>
+                    <view class="small-size">{{item.info}}</view>
+                </view>
+            </view>
+        </view>  
+    </view>
+</view>

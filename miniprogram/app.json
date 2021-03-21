@@ -1,10 +1,10 @@
 {
-  "entryPagePath": "pages/contact/index",
+  "entryPagePath": "pages/map/index",
   "pages": [
     "pages/wx/index",
-    "pages/contact/index",
-    "pages/found/index",
-    "pages/me/index",
+    "pages/imitate/index",
+    "pages/map/index",
+    "pages/document/index",
     "pages/resume/resume"
   ],
   "permission": {
@@ -14,7 +14,7 @@
   },
   "window": {
     "navigationBarTextStyle": "@navigationBarTextStyle",
-    "navigationBarTitleText": "我的微信小程序",
+    "navigationBarTitleText": "我的小程序",
     "navigationBarBackgroundColor": "@navigationBarBackgroundColor",
     "backgroundColor": "@backgroundColor"
   },
@@ -32,33 +32,33 @@
         "text": "微信"
       },
       {
-        "pagePath": "pages/contact/index",
-        "iconPath": "@iconTabContact",
-        "selectedIconPath": "@selectedIconTabContact",
-        "text": "通讯录"
+        "pagePath": "pages/imitate/index",
+        "iconPath": "@iconTabImitate",
+        "selectedIconPath": "@selectedIconTabImitate",
+        "text": "模仿"
       },
       {
-        "pagePath": "pages/found/index",
-        "iconPath": "@iconTabFound",
-        "selectedIconPath": "@selectedIconTabFound",
-        "text": "发现"
+        "pagePath": "pages/map/index",
+        "iconPath": "@iconTabMap",
+        "selectedIconPath": "@selectedIconTabMap",
+        "text": "地图"
       },
       {
-        "pagePath": "pages/me/index",
-        "iconPath": "@iconTabMe",
-        "selectedIconPath": "@selectedIconTabMe",
-        "text": "我"
+        "pagePath": "pages/document/index",
+        "iconPath": "@iconTabDocument",
+        "selectedIconPath": "@selectedIconTabDocument",
+        "text": "文档"
       },
       {
         "pagePath": "pages/resume/resume",
-        "iconPath": "@iconTabMe",
-        "selectedIconPath": "@selectedIconTabMe",
-        "text": "简历"
+        "iconPath": "@iconTabResume",
+        "selectedIconPath": "@selectedIconTabResume",
+        "text": "关于我"
       }
     ]
   },
   "sitemapLocation": "sitemap.json",
-  "themeLocation": "demo.theme.json",
+  "themeLocation": "myweb.theme.json",
   "darkmode": true,
   "resizable": true
 }

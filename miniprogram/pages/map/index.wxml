@@ -1,0 +1,3 @@
+<view class="container">
+	<map class="mapArea" longitude="{{longitude}}" latitude="{{latitude}}"></map>
+</view>
